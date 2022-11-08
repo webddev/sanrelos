@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="img/logo1.png" alt="Logo" width="50"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"> Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fa-solid fa-circle-plus"></i> Серверы</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="menu-icon fa fa-headset"></i> Поддержка</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"
+                    ><i class="menu-icon fa fa-money-check-alt"></i> Баланс</a
+                  >
+                </li>
+                <div class="nav-rightblock">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link nav-link-money">
+                      <span class="icon-money">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <circle
+                              fill="#000000"
+                              opacity="0.3"
+                              cx="20.5"
+                              cy="12.5"
+                              r="1.5"
+                            />
+                            <rect
+                              fill="#000000"
+                              opacity="0.3"
+                              transform="translate(12.000000, 6.500000) rotate(-15.000000) translate(-12.000000, -6.500000) "
+                              x="3"
+                              y="3"
+                              width="18"
+                              height="7"
+                              rx="1"
+                            />
+                            <path
+                              d="M22,9.33681558 C21.5453723,9.12084552 21.0367986,9 20.5,9 C18.5670034,9 17,10.5670034 17,12.5 C17,14.4329966 18.5670034,16 20.5,16 C21.0367986,16 21.5453723,15.8791545 22,15.6631844 L22,18 C22,19.1045695 21.1045695,20 20,20 L4,20 C2.8954305,20 2,19.1045695 2,18 L2,6 C2,4.8954305 2.8954305,4 4,4 L20,4 C21.1045695,4 22,4.8954305 22,6 L22,9.33681558 Z"
+                              fill="#000000"
+                            />
+                          </g>
+                        </svg>
+                        0.00 T
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="icom-mess">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <path
+                              opacity="0.3"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M14.4862 18L12.7975 21.0566C12.5304 21.54 11.922 21.7153 11.4386 21.4483C11.2977 21.3704 11.1777 21.2597 11.0887 21.1255L9.01653 18H5C3.34315 18 2 16.6569 2 15V6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H14.4862Z"
+                              fill="black"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M6 7H15C15.5523 7 16 7.44772 16 8C16 8.55228 15.5523 9 15 9H6C5.44772 9 5 8.55228 5 8C5 7.44772 5.44772 7 6 7ZM6 11H11C11.5523 11 12 11.4477 12 12C12 12.5523 11.5523 13 11 13H6C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z"
+                              fill="black"
+                            />
+                          </g>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <span class="icon-flash">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <path
+                              d="M16.3740377,19.9389434 L22.2226499,11.1660251 C22.4524142,10.8213786 22.3592838,10.3557266 22.0146373,10.1259623 C21.8914367,10.0438285 21.7466809,10 21.5986122,10 L17,10 L17,4.47708173 C17,4.06286817 16.6642136,3.72708173 16.25,3.72708173 C15.9992351,3.72708173 15.7650616,3.85240758 15.6259623,4.06105658 L9.7773501,12.8339749 C9.54758575,13.1786214 9.64071616,13.6442734 9.98536267,13.8740377 C10.1085633,13.9561715 10.2533191,14 10.4013878,14 L15,14 L15,19.5229183 C15,19.9371318 15.3357864,20.2729183 15.75,20.2729183 C16.0007649,20.2729183 16.2349384,20.1475924 16.3740377,19.9389434 Z"
+                              fill="#000000"
+                            />
+                            <path
+                              d="M4.5,5 L9.5,5 C10.3284271,5 11,5.67157288 11,6.5 C11,7.32842712 10.3284271,8 9.5,8 L4.5,8 C3.67157288,8 3,7.32842712 3,6.5 C3,5.67157288 3.67157288,5 4.5,5 Z M4.5,17 L9.5,17 C10.3284271,17 11,17.6715729 11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L4.5,20 C3.67157288,20 3,19.3284271 3,18.5 C3,17.6715729 3.67157288,17 4.5,17 Z M2.5,11 L6.5,11 C7.32842712,11 8,11.6715729 8,12.5 C8,13.3284271 7.32842712,14 6.5,14 L2.5,14 C1.67157288,14 1,13.3284271 1,12.5 C1,11.6715729 1.67157288,11 2.5,11 Z"
+                              fill="#000000"
+                              opacity="0.3"
+                            />
+                          </g>
+                        </svg> </span
+                    ></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"
+                      ><span class="svg-icon-lg">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <polygon points="0 0 24 0 24 24 0 24" />
+                            <path
+                              d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
+                              fill="#b5b5c3"
+                              fill-rule="nonzero"
+                              opacity="0.3"
+                            />
+                            <path
+                              d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
+                              fill="#b5b5c3"
+                              fill-rule="nonzero"
+                            />
+                          </g>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="slider">
+          <div class="swiper banner-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"
+                  ><div class="slider-banner slider-banner1">
+                    <h3>Удобная панель управления</h3>
+                    <p>
+                      С нашей панелью управления, управлять сервером легко и
+                      просто, с ней справится как опытный пользователь так и
+                      новичок.
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide ">
+                <a href="#"
+                  ><div class="slider-banner slider-banner2">
+                    <h3>Тех.поддержка</h3>
+                    <p>
+                      Наша техническая поддержка работает 7 дней в неделю 24
+                      часа в сутки 365 дней в году. Мы готовы помочь вам в любое
+                      время суток.
+                    </p>
+                  </div></a
+                >
+              </div>
+              <div class="swiper-slide ">
+                <a href="#"
+                  ><div class="slider-banner slider-banner3">
+                    <h3>Наши услуги</h3>
+                    <p>
+                      <ul>
+                        <li><a href="#">San Andreas: Multiplayer 0.3.7</a></li>
+                      <li><a href="#">Criminal Russia: Mltiplayser</a></li>
+                      <li><a href="#">Criminal Russia: Mltiplayer 0.3.7</a></li>
+                      <li><a href="#">-</a></li>
+                    </ul>
+                    </p>
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="swiper-pagination banner-swiper-pagination"></div>
+          </div>
+        </section>
+        <section class="events">
+          <div class="events-block">
+            <ul> 
+              <li><div class="date">26.10.2022 в 16:24</div>
+                Небольшое нововведение <br><a href="#">Читать полностью</a></li>
+              <li><div class="date">26.10.2022 в 19:24</div>Выдача бонусных монет всем <br><a href="#">Читать полностью</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="products">
+          <h2>Продукты банка</h2>
+          <div class="grid">
+            <div class="products-item" id="prod-item1">
+              <h3>Экспресс-кредит</h3>
+              <p>Онлайн без залога и на любые цели</p>
+              <a href="#">узнать подробнее <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="products-item" id="prod-item2">
+              <h3>Jusan депозит</h3>
+              <p>Управляйте своими сбережениями онлайн</p>
+              <a href="#">узнать подробнее <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="products-item" id="prod-item3">
+              <h3>Карта Jusan</h3>
+              <p>Чем больше транзакций, тем больше бонусов</p>
+              <a href="#">узнать подробнее <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="products-item" id="prod-item4">
+              <h3>Рефинансирование займов</h3>
+              <p>Выгодные условия для комфортного погашения</p>
+              <a href="#">узнать подробнее <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="products-item" id="prod-item5">
+              <h3>Кредит до зарплаты*</h3>
+              <p>Выдаем нужную сумму до зарплаты. Без залога, на любые цели.</p>
+              <a href="#">узнать подробнее <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+         
+        </section>
+        <section class="shop">
+          <h2>Магазин</h2>
+          <div class="row">
+            <a href="#" class="row-item" id="row-item1">
+              <h3>Спорт и туризм</h3>
+            </a>
+            <a href="#" class="row-item" id="row-item2">
+              <h3>Ноутбуки и Компьютеры</h3>
+            </a>
+            <a href="#" class="row-item" id="row-item3">
+              <h3>Смартфоны и гаджеты</h3>
+            </a>
+            <a href="#" class="row-item" id="row-item4">
+              <h3>Мебель для дома</h3>
+            </a>
+            <a href="#" class="row-item" id="row-item5">
+              <h3>Бытовая техника</h3>
+            </a>
+            <a href="#" class="row-item" id="row-item6">
+              <h3>ТВ, аудио, видео и фото</h3>
+            </a>
+          </div>
+        </section>
+        <section class="services">
+          <h2>Сервисы</h2>
+          <div class="row">
+            <div class="col-12 services-item" id="services-item1">
+              <h3>Банк для малого и среднего бизнеса</h3>
+              <p>У нас всё онлайн — на сайте и в приложении. Откройте счет не выходя из дома и ведите бизнес с комфортом</p>
+              <a href="#">Перейти</a>
+            </div>
+            <div class="col-6 services-item" id="services-item2">
+              <h3>Инвестиции</h3>
+              <p>Инвестируйте или доверьте экспертам управлять вашими инвестициями</p>
+              <a href="#">Перейти</a>
+            </div>
+            <div class="col-6 services-item" id="services-item3">
+              <h3>Страхование</h3>
+              <p>Мы оберегаем все, что Вы цените</p>
+              <a href="#">Перейти</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="roww">
+          <div>
+            <p>2022 © Sanrelo Host</p>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Контакты</a> </li>
+              <li><a href="#">Сообщество VK</a> </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/974277a6df.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
